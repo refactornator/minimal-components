@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Row = styled.div`
   margin: 0 -8px;
   display: flex;
-  flex: 1 0 100%;
+  flex: ${props => (props.grow ? '1 1 auto' : 'initial')};
 
   flex-direction: ${props => (props.reverse ? 'row-reverse' : 'row')};
 

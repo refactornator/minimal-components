@@ -1,12 +1,10 @@
 import styled from 'styled-components';
 
 function calculateWidth(size) {
-  return `calc(100% - (100% / 8) * ${size - 8})`;
+  return `calc(100% - (100% / 8) * ${Math.abs(8 - size)})`;
 }
 
 const Column = styled.div`
-  width: calc(100% / 8);
-  flex: 1 1 calc(100% / 8);
   padding: 0 8px;
 
   width: ${props => calculateWidth(props.size)};
