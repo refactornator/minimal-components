@@ -31,9 +31,13 @@ const Item = Column.extend`
   }
 `;
 
-<Menu>
-  <Item size={1}>Home</Item>
-  <Item size={1}>About</Item>
-  <Item size={1}>Projects</Item>
-</Menu>;
+const Header = () => (
+  <Menu>
+    <Item size={1}>Home</Item>
+    <Item size={1}>About</Item>
+    <Item size={1}>Projects</Item>
+  </Menu>
+);
+
+export default Header;
 ```
