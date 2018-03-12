@@ -8,7 +8,6 @@ const Grid = styled.div`
   justify-content: flex-start; /* align items in Main Axis */
   align-items: stretch; /* align items in Cross Axis */
   align-content: stretch; /* Extra space in Cross Axis */
-  flex-direction: ${props => (props.horizontal ? 'row' : 'column')};
 `;
 
 export default Grid;

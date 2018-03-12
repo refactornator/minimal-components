@@ -6,9 +6,6 @@ function calculateWidth(size) {
 
 const Column = styled.div`
   padding: 0 8px;
-
-  width: ${props => calculateWidth(props.size)};
-  max-width: ${props => calculateWidth(props.size)};
   flex: 0 1 ${props => calculateWidth(props.size)};
 `;
 

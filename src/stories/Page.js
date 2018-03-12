@@ -6,6 +6,7 @@ import { Grid, Row, Column } from '../index';
 
 const Container = Grid.extend`
   color: white;
+  flex-direction: column;
   background-color: #ced1d6;
 `;
 

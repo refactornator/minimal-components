@@ -5,8 +5,6 @@ const Row = styled.div`
   margin: 8px;
   display: flex;
 
-  flex-direction: ${props => (props.reverse ? 'row-reverse' : 'row')};
-
   justify-content: ${props => {
     switch (props.justify) {
       case 'start':
