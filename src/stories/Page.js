@@ -48,7 +48,7 @@ const RightSideMenu = Column.extend`
   background-color: #00527e;
 `;
 
-storiesOf('Page', module).add('basic layout', () => (
+storiesOf('Page', module).addWithJSX('basic layout', () => (
   <Container>
     <Header>Header</Header>
     <Main>

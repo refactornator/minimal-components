@@ -26,14 +26,14 @@ const Item = Column.extend`
 `;
 
 storiesOf('Menu', module)
-  .add('horizontal menu', () => (
+  .addWithJSX('horizontal menu', () => (
     <Menu style={{ height: 45 }}>
       <Item size={1}>Home</Item>
       <Item size={1}>About</Item>
       <Item size={1}>Projects</Item>
     </Menu>
   ))
-  .add('vertical menu', () => (
+  .addWithJSX('vertical menu', () => (
     <Menu style={{ flex: '0 142px', flexDirection: 'column' }}>
       <Item size={1}>Home</Item>
       <Item size={1}>About</Item>
