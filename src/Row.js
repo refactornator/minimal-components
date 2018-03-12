@@ -1,11 +1,9 @@
 import styled from 'styled-components';
 
 const Row = styled.div`
-  height: 100%;
-  width: 100%;
-  margin: 0 -8px;
+  flex: 1;
+  margin: 8px;
   display: flex;
-  flex: initial;
 
   flex-direction: ${props => (props.reverse ? 'row-reverse' : 'row')};
 
